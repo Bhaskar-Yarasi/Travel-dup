@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    font-family: play;
+
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+.container .slider{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 500%;
+   height: 100%;
+   float: left;
+   animation: animate 10s linear infinite;
+
+}
+.container .slider .slide{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.container .slider .slide .caption{
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    right: 60px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+}
+.container .slider .slide .caption h2, p{
+    color: white;
+    margin: 0;
+    padding: 10px ;
+
+}
+.container .slider .slide.slider1{
+background: url(1.jpg);
+background-size: cover;
+background-position: center;
+height: 350px;
+}
+.container .slider .slide.slider2{
+background: url(2.jpg);
+background-size: cover;
+background-position: center;
+height: 350px;
+}
+.container .slider .slide.slider3{
+background: url(3.jpg);
+background-size: cover;
+background-position: center;
+height: 350px;
+}
+.container .slider .slide.slider4{
+background: url(4.jpg);
+background-size: cover;
+background-position: center;
+height: 350px;
+}
+@keyframes animate{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -100%;
+    }
+}
+
+
+.header {
+  background-color: rgba(255, 255, 0, 0.616);
+  padding: 10px;
+  text-align: center;
+}
+.header1{
+  background-color: rgba(234, 0, 255, 0.616);
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.header2{
+  background-color: rgba(255, 0, 21, 0.616);
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.header3{
+  background-color: rgba(81, 255, 0, 0.616);
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+#navbar a:hover {
+  background-color: gray;
+  color: black;
+  border-radius: 10px;
+}
+
+#navbar a.active {
+  background-color: gray;
+  color: white;
+  border-radius: 10px;
+}
+
+.content {
+  padding: 16px;
+}
+.content p, h1{
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.content p, h1{
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+   
+.cont{
+    font-size: large;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.header h2{
+    font-size: 40px;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header p{
+    font-size: 20px;
+    color:green ;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.footer  {
+  
+   width: 100%;
+   background: rgba(0, 0, 0, 0.6);;
+   color:yellowgreen;
+   text-align: center;
+   border-radius: 3px;
+   font-family: 'Courier New', Courier, monospace;
+}
+table{
+    width: 100%;
+    padding: 20px;
+}
+img{
+    border-radius: 20px;
+
+}
+
+</style>
+    </head>
+    <body>
+
+        <div id="home" class="header">
+            <h2>Travel</h2>
+            <p>Joy Of Travelling.</p>
+          </div>
+          
+          <div id="navbar">
+            <a href="#bang">Expolre</a>
+            <a href="#hyderabad">Service</a>
+            <a href="#footer">Contact</a>
+            <a class="active" href="#home">Home</a>
+          </div>
+
+        <!---->
+        <div class="container">
+            <div class="slider">
+                <div class="slide slider1">
+                    <div class="caption">
+            <h2> Hyderabad</h2>
+            <p>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?</p>
+                    </div>
+            
+                </div>
+                <div class="slide slider2">
+                    <div class="caption">
+            <h2> Banglore</h2>
+            <p>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?</p>
+                    </div>
+            
+                </div>
+                <div class="slide slider3">
+                    <div class="caption">
+            <h2> Chennai</h2>
+            <p>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?</p>
+                    </div>
+            
+                </div>
+                <div class="slide slider4">
+                    <div class="caption">
+            <h2> Ooty</h2>
+            <p>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?</p>
+                    </div>
+            
+                </div>
+            
+            </div>
+                    </div>
+                    <div id="hyderabad" class="header1">
+                        <h2>Popular Desinations</h2>
+                        <p style="color: yellow; font-weight: bold;">Hyderabad.</p>
+                      </div>
+                      <table >
+                          <tr>
+                              <td>
+                                  <img src="Charminar.jfif" width="500px" height="300px">
+                              </td>
+                              <td>
+                                <img src="5.jpg" width="500px" height="300px">
+                            </td>
+                          </tr>
+                      </table>
+                      <h1>Hyderabad Tourism</h1>
+                      <div id="bang" class="header2">
+                        <h2>Popular Desinations</h2>
+                        <p style="color: yellow; font-weight: bold;">Banglore.</p>
+                      </div>
+                      <table>
+                          <tr>
+                              <td>
+                                  <img src="Charminar.jfif" width="350px" height="250px">
+                              </td>
+                              <td>
+                                <img src="5.jpg" width="350px" height="250px">
+                            </td>
+                            <td>
+                                <img src="5.jpg" width="350px" height="250px">
+                            </td>
+                          </tr>
+                    
+                      </table>
+                      <div class="cont">
+                        <h1>Awesome Miniature Photos from Around the World</h1>
+                    </div>
+
+                      <div id="bang" class="header3">
+                        <h2>Popular Desinations</h2>
+                        <p style="color: yellow; font-weight: bold;">Dlehi.</p>
+                      </div>
+                      <table >
+                          <tr>
+                              <td>
+                                  <img src="Charminar.jfif" width="300px" height="250px">
+                              </td>
+                              <td>
+                                <img src="5.jpg" width="300px" height="250px">
+                            </td>
+                            <td>
+                                <img src="5.jpg" width="300px" height="250px">
+                            </td>
+                            <td>
+                                <img src="5.jpg" width="300px" height="250px">
+                            </td>
+                            
+                          </tr>
+                      </table>
+                    <div class="content">
+                        <h1>Best Travel Quotes for Travel Inspiration</h1>
+<p>Sometimes a simple quote or phrase is all it takes to spark action or change in our lives.
+We always welcome inspirational words, so we thought it would be fun to share some quotes that have inspired us in the past. Hopefully one or two of them give you the push you need to plan that next adventure. Enjoy! Sometimes a simple quote or phrase is all it takes to spark action or change in our lives.
+We always welcome inspirational words, so we thought it would be fun to share some quotes that have inspired us in the past. Hopefully one or two of them give you the push you need to plan that next adventure. Enjoy!</p>
+                    </div>
+                    <script>
+                        window.onscroll = function() {myFunction()};
+                        
+                        var navbar = document.getElementById("navbar");
+                        var sticky = navbar.offsetTop;
+                        
+                        function myFunction() {
+                          if (window.pageYOffset >= sticky) {
+                            navbar.classList.add("sticky")
+                          } else {
+                            navbar.classList.remove("sticky");
+                          }
+                        }
+                        </script>
+                    
+
+        <div id="footer" class="footer">
+            <h2>Copyrights &copy; 2020</h2>
+            <p>All Rights Reserved</p>
+            <p>Developed & Maintained By 
+                <a style="color: yellow;" href="https//fb.com"> Ravi Teja</a>
+            </p>
+            <a href="https://wa.me/+917799772728" target="_blank"><i  style="background-color: green; color: white; border-radius: 15px; font-size: 30px;" class="fa fa-whatsapp"></i></a>
+          </div>
+        
+        
+    </body>
+</html>
